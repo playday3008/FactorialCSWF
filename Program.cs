@@ -9,11 +9,11 @@ namespace FactorialCSWF
 		/// Главная точка входа для приложения.
 		/// </summary>
 		[STAThread]
-		static void Main()
+		static void Main()//Старт
 		{
-			Application.EnableVisualStyles();
-			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new MainWindow());
+			Application.EnableVisualStyles();//Включити стилі
+			Application.SetCompatibleTextRenderingDefault(false);//Режим сумісності тексту
+			Application.Run(new MainWindow());//Запустити MainWindow.cs
 		}
 	}
 }

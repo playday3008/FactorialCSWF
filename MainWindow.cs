@@ -14,7 +14,7 @@ namespace FactorialCSWF//Простір імен
             InitializeComponent();//Ініціалізація
         }
 
-        private async void metroButton1_Click(object sender, EventArgs e)//Якщо натиснути кнопку "Start"
+        private async void MetroButton1_Click(object sender, EventArgs e)//Якщо натиснути кнопку "Start"
         {
             Stopwatch stopWatch = new Stopwatch();//Ініціалізація таймеру
             Outputbox.Text = String.Empty;//Очищення відповіні при новому запуску
@@ -35,7 +35,7 @@ namespace FactorialCSWF//Простір імен
                             var factorial = BigInteger.One;// Ініціалізація factorial
                             for (int i = 1; i <= n; i++)//Запуск обчислення
                             {
-                                await Task.Run(() => factorial *= i);//Обчислення
+                                await Task.Run(() => factorial *= i);//Асинхронне обчислення
                             }
                             stopWatch.Stop();//Зупинення таймера
                             TimeSpan ts = stopWatch.Elapsed;//Ініціалізація перемінної stopWatch.Elapsed
@@ -57,7 +57,7 @@ namespace FactorialCSWF//Простір імен
                             var factorial = BigInteger.One;// Ініціалізація factorial
                             for (int i = 1; i <= n; i++)//Запуск обчислення
                             {
-                                await Task.Run(() => factorial *= i);//Обчислення
+                                await Task.Run(() => factorial *= i);//Асинхронне обчислення
                             }
                             stopWatch.Stop();//Зупинення таймера
                             TimeSpan ts = stopWatch.Elapsed;//Ініціалізація перемінної stopWatch.Elapsed
@@ -90,17 +90,17 @@ namespace FactorialCSWF//Простір імен
             }
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)//Якщо натиснути на кнопку Open Documents folder
+        private void MetroButton2_Click(object sender, EventArgs e)//Якщо натиснути на кнопку Open Documents folder
         {
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);//Пошук шляху до папки "Документи"
             Process.Start("explorer.exe", docPath);//Запустити explorer.exe в папці Документи
         }
 
-        private void metroTextBox1_KeyDown(object sender, KeyEventArgs e)//Якщо натиснути кнопу в полі вводу
+        private void MetroTextBox1_KeyDown(object sender, KeyEventArgs e)//Якщо натиснути кнопу в полі вводу
         {
             if (e.KeyCode == Keys.Enter)//Якщо кнопка Enter
             {
-                metroButton1_Click(this, new EventArgs());//Запускає процес metroButton1_Click
+                MetroButton1_Click(this, new EventArgs());//Запускає процес metroButton1_Click
             }
         }
     }

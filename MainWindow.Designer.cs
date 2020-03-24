@@ -68,7 +68,7 @@
 			this.Startbutton.Text = "Start";
 			this.Startbutton.Theme = MetroFramework.MetroThemeStyle.Dark;
 			this.Startbutton.UseSelectable = true;
-			this.Startbutton.Click += new System.EventHandler(this.metroButton1_Click);
+			this.Startbutton.Click += new System.EventHandler(this.MetroButton1_Click);
 			// 
 			// Timelabel
 			// 
@@ -94,7 +94,7 @@
 			this.OpenDocbutton.Text = "Open Documents folder";
 			this.OpenDocbutton.Theme = MetroFramework.MetroThemeStyle.Dark;
 			this.OpenDocbutton.UseSelectable = true;
-			this.OpenDocbutton.Click += new System.EventHandler(this.metroButton2_Click);
+			this.OpenDocbutton.Click += new System.EventHandler(this.MetroButton2_Click);
 			// 
 			// Outputbox
 			// 
@@ -205,7 +205,7 @@
 			this.Inputbox.UseSelectable = true;
 			this.Inputbox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
 			this.Inputbox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-			this.Inputbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.metroTextBox1_KeyDown);
+			this.Inputbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MetroTextBox1_KeyDown);
 			// 
 			// Counterbox
 			// 
